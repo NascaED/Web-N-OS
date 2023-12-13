@@ -1,0 +1,228 @@
+body {
+    background-image: url(/base/midia/imgs/001.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden
+}
+
+/*Janela inicio*/
+.janela {
+    width: calc(70% - 10px);
+    height: calc(55% - 10px);
+    min-width: 755px;
+    min-height: 105px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #000a;
+    padding: 42px 5px 3px 110px;
+    box-sizing: border-box;
+    box-shadow: 0 0 30px #0008;
+    border-radius: 8px;
+    border: 1px solid #7778;
+    backdrop-filter: blur(100px);
+    overflow: hidden;
+    transform: translateZ(0) translate(-50%, -50%) scale(1);
+    user-select: none
+}
+
+.barraJanela {
+    background: linear-gradient(to bottom, #333, #222);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 12px;
+    padding-left: 16px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 25px #0005
+}
+
+.btnJanela {
+    position: relative;
+    float: left;
+    width: 12px;
+    height: 12px;
+    margin-right: 7px;
+    margin-top: 4px;
+    cursor: pointer;
+    background: linear-gradient(to bottom, #f23, #f238);
+    border-radius: 50%
+}
+
+.btnJanela::before,
+.btnJanela::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #fffb, #fff5);
+    cursor: pointer
+}
+
+.btnJanela::before {
+    left: 20px
+}
+
+.btnJanela::after {
+    left: 40px
+}
+
+.barraJanela z {
+    position: relative;
+    float: left;
+    left: 49px;
+    padding: 1px 4px;
+    color: #fffa;
+    background: linear-gradient(to bottom, #444, #333);
+    border: 0px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    user-select: none;
+    margin: -2px 2px
+}
+
+.barraJanela span {
+    color: #fffa;
+    font-family: monospace;
+    font-size: 14px;
+    user-select: none
+}
+
+.barraJanela img {
+    position: relative;
+    float: right;
+    right: 2px;
+    width: 28px;
+    margin: -5px -8px -10px 80px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #000;
+    user-select: none
+}
+
+.conteudoJanela {
+    background: #363636;
+    color: #fffa;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 20%;
+    right: 0;
+    padding: 5px;
+    overflow: scroll;
+    scrollbar-width: thin;
+    box-shadow: 0 0 45px #0005;
+    scrollbar-color: #444 #363636;
+    scrollbar-width: thin;
+    border: 1px solid#7777;
+
+    &::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #333;
+        border-radius: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: #363636;
+    }
+
+    -ms-overflow-style: none;
+    scrollbar-color: #444 #363636;
+    scrollbar-width: thin;
+
+    html {
+        scrollbar-width: none;
+    }
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.conteudoJanela img {
+    position: relative;
+    float: left;
+    left: calc(50% - 100px);
+    top: calc(50% - 100px);
+    width: 200px;
+    border-radius: 30px;
+    box-shadow: 0 0 15px #000a;
+    border: 1px solid#7777
+}
+
+.conteudoJanela button {
+    position: absolute;
+    float: left;
+    left: 20px;
+    top: calc(100% - 45px);
+    padding: 4px 15px;
+    color: #fffa;
+    background: linear-gradient(to bottom, #333, #222);
+    border: 1px solid#7777;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    margin: 2px
+}
+
+/*Janela Fim*/
+/*Barra de Itens inicio*/
+.barraGlobal {
+    display: flex;
+    position: absolute;
+    float: left;
+    left: calc(50% - 175px);
+    top: calc(100% - 60px);
+    width: 350px;
+    user-select: none;
+    height: 50px
+}
+
+.menuGlobal {
+    display: flex;
+    align-items: center;
+    background-color: #1118;
+    width: calc(70% - 5px);
+    height: calc(100% - 2px);
+    margin: 0 3px 0 0;
+    backdrop-filter: blur(100px);
+    border: 1px solid#7778;
+    box-shadow: 0 0 10px #000b;
+    border-radius: 10px
+}
+
+.menuGlobal img {
+    width: 42px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 3px
+}
+
+.itensGlobal {
+    background-color: #1118;
+    width: calc(30% - 5px);
+    height: calc(100% - 2px);
+    margin: 0 0 0 2px;
+    backdrop-filter: blur(100px);
+    border: 1px solid#7778;
+    box-shadow: 0 0 10px #000b;
+    border-radius: 10px
+}
+
+.itensGlobal p {
+    color: #fff5;
+    font-family: monospace;
+    font-size: 13px;
+    margin: 0 5px
+}
+
+/*Barra de Itens fim*/
