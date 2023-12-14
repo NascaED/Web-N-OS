@@ -147,33 +147,6 @@ body {
         display: none;
     }
 }
-
-.conteudoJanela img {
-    position: relative;
-    float: left;
-    left: calc(50% - 100px);
-    top: calc(50% - 100px);
-    width: 200px;
-    border-radius: 30px;
-    box-shadow: 0 0 15px #000a;
-    border: 1px solid#7777
-}
-
-.conteudoJanela button {
-    position: absolute;
-    float: left;
-    left: 20px;
-    top: calc(100% - 45px);
-    padding: 4px 15px;
-    color: #fffa;
-    background: linear-gradient(to bottom, #333, #222);
-    border: 1px solid#7777;
-    border-radius: 5px;
-    font-size: 12px;
-    cursor: pointer;
-    margin: 2px
-}
-
 /*Janela Fim*/
 /*Barra de Itens inicio*/
 .barraGlobal {
@@ -224,5 +197,23 @@ body {
     font-size: 13px;
     margin: 0 5px
 }
-
 /*Barra de Itens fim*/
+/*Itens Comuns*/
+img {
+    width: 200px;
+    border-radius: 30px;
+    box-shadow: 0 0 15px #000a;
+    margin: 2px;
+    border: 1px solid#7777
+}
+
+button {
+    padding: 4px 18px 8px 18px;
+    color: #fffa;
+    background: linear-gradient(to bottom, #333, #222);
+    border: 1px solid#7777;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    margin: 2px
+}
