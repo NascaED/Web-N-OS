@@ -32,3 +32,16 @@ janelas.forEach(janela => {
     document.addEventListener('mouseup', pararArraste);
     document.addEventListener('mousemove', arrastarJanela)
 })
+
+//Horario
+function atualizarHoraData() {
+    const agora = new Date();
+    const horas = String(agora.getHours()).padStart(2, '0');
+    const minutos = String(agora.getMinutes()).padStart(2, '0');
+    const segundos = String(agora.getSeconds()).padStart(2, '0');
+
+    const formato = `${horas}:${minutos}:${segundos}`;
+    document.getElementById('horas').textContent = formato;
+}
+atualizarHoraData();
+setInterval(atualizarHoraData, 1000);

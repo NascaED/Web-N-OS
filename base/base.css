@@ -5,7 +5,7 @@ body {
     background-position: center;
     overflow: hidden
 }
-
+/*----------------------------------------------------------------------------------Global*/
 /*Janela inicio*/
 .janela {
     width: 570px;
@@ -26,6 +26,7 @@ body {
     backdrop-filter: blur(100px);
     overflow: hidden;
     transform: translateZ(0) translate(-50%, -50%) scale(1);
+    resize: both;
     user-select: none
 }
 
@@ -124,16 +125,16 @@ body {
     border: 1px solid#7777;
 
     &::-webkit-scrollbar {
-        width: 4px;
+        width: 4px
     }
 
     &::-webkit-scrollbar-thumb {
         background-color: #333;
-        border-radius: 5px;
+        border-radius: 5px
     }
 
     &::-webkit-scrollbar-track {
-        background-color: #363636;
+        background-color: #363636
     }
 
     -ms-overflow-style: none;
@@ -141,64 +142,83 @@ body {
     scrollbar-width: thin;
 
     html {
-        scrollbar-width: none;
+        scrollbar-width: none
     }
 
     &::-webkit-scrollbar {
-        display: none;
+        display: none
     }
 }
 /*Janela Fim*/
+/*--------------------------------------------------*/
 /*Barra de Itens inicio*/
 .barraGlobal {
     display: flex;
     position: absolute;
+    justify-content: center;
     float: left;
-    left: calc(50% - 175px);
+    left: 0;
     top: calc(100% - 60px);
-    width: 350px;
+    width: 100%;
     user-select: none;
     height: 50px
 }
 
-.menuGlobal {
-    display: flex;
-    align-items: center;
+.barraGlobal div{
+    box-shadow: 0 0 3px #000b;
+    border: 1px solid#fff5;
     background-color: #1118;
-    width: calc(70% - 5px);
+    border-radius: 10px;
     height: calc(100% - 2px);
-    margin: 0 3px 0 0;
-    backdrop-filter: blur(100px);
-    border: 1px solid#7778;
-    box-shadow: 0 0 10px #000b;
-    border-radius: 10px
+    overflow: hidden;
+    backdrop-filter: blur(50px)
+}
+
+.menuGlobal {
+    padding: 0 3px;
+    margin: 0 3px 0 0
 }
 
 .menuGlobal img {
+    box-shadow: 0 0 0;
+    border: 1px solid#fff5;
     width: 42px;
     border-radius: 8px;
     cursor: pointer;
-    margin: 0 3px
+    margin: 2px 0 0 0
+}
+
+.menuGlobal img:hover {
+    border: 1px solid#fffa
 }
 
 .itensGlobal {
-    background-color: #1118;
-    width: calc(30% - 5px);
-    height: calc(100% - 2px);
-    margin: 0 0 0 2px;
-    backdrop-filter: blur(100px);
-    border: 1px solid#7778;
-    box-shadow: 0 0 10px #000b;
-    border-radius: 10px
+    width: 117px;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0
 }
 
-.itensGlobal p {
-    color: #fff5;
+.itensGlobal z {
+    background: linear-gradient(to bottom, #fff5, #fff0);
+    padding: 1px 6px;
+    color: #fffc;
+    border: 1px solid#fff5;
+    border-top-width: 0;
+    border-left-width: 0;
+    font-size: 18px;
     font-family: monospace;
-    font-size: 13px;
-    margin: 0 5px
+    cursor: pointer;
+    user-select: none;
+    margin: 0
+}
+
+.itensGlobal z:hover {
+    color: #000c;
+    background: #fff
 }
 /*Barra de Itens fim*/
+/*--------------------------------------------------------------------------------Global...*/
 /*Itens Comuns*/
 img {
     width: 200px;
@@ -217,4 +237,9 @@ button {
     font-size: 12px;
     cursor: pointer;
     margin: 2px
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #444, #333);
+    border: 1px solid#777
 }
