@@ -8,9 +8,9 @@ body {
 
 /*Janela inicio*/
 .janela {
-    width: calc(70% - 10px);
-    height: calc(55% - 10px);
-    min-width: 755px;
+    width: 570px;
+    height: 400px;
+    min-width: 100px;
     min-height: 105px;
     position: absolute;
     top: 50%;
@@ -39,6 +39,7 @@ body {
     padding-left: 16px;
     overflow: hidden;
     text-align: center;
+    white-space: nowrap;
     box-shadow: 0 0 25px #0005
 }
 
@@ -100,7 +101,7 @@ body {
     float: right;
     right: 2px;
     width: 28px;
-    margin: -5px -8px -10px 80px;
+    margin: -5px -8px -10px 0px;
     border-radius: 5px;
     box-shadow: 0 0 5px #000;
     user-select: none

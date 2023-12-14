@@ -8,7 +8,8 @@ janelas.forEach(janela => {
             const janelaRect = janela.getBoundingClientRect();
             offsetX = e.clientX - janelaRect.left - (janelaRect.width / 2);
             offsetY = e.clientY - janelaRect.top - (janelaRect.height / 2);
-            janela.style.cursor = 'grabbing'
+            janela.style.userSelect = 'none';
+            janela.style.cursor = 'grabbing';
         }
     };
     const pararArraste = () => {
