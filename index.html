@@ -22,18 +22,28 @@
             <button>OK</button>
         </div>
     </div>
+    <!---->
+    <div class="janela" id="tudo">
+        <div class="barraJanela">
+            <div class="btnJanela"></div><span>Todo os APPS</span>
+            <z>☰</z><z>⌬</z><z>⌥</z><z>⌨</z><img src="./base/midia/icons/ico-todosapp.png">
+        </div>
+        <div class="conteudoJanela">
+            <!--Futuros conteudos-->
+        </div>
+    </div>
     <!--Janela fim-->
     <!--Barra Menu inicio-->
     <div class="barraGlobal">
         <div class="menuGlobal">
-            <img src="./base/midia/icons/ico-todosapp.png">
-            <img src="./base/midia/icons/ico-N-1.png">
-            <img src="./base/midia/icons/ico-spfe.png">
-            <img src="./base/midia/icons/ico-ss.png">
-            <img src="./base/midia/icons/ico-J-N.png">
+            <img src="./base/midia/icons/ico-todosapp.png" data-target="tudo">
+            <img src="./base/midia/icons/ico-N-1.png" data-target="...">
+            <img src="./base/midia/icons/ico-spfe.png" data-target="...">
+            <img src="./base/midia/icons/ico-ss.png" data-target="...">
+            <img src="./base/midia/icons/ico-J-N.png" data-target="modelo">
         </div>
         <div class="itensGlobal">
-            <z>⊞</z><z>⌨</z><z>⇅</z><z>☰</z><br><z id="horas">00:00:00</z><z>↪</z>
+            <z>⊞</z><z>⌨</z><z>⇅</z><z>☰</z><br><z id="horas">00:00:00</z><z onclick="telaG()">⇱</z>
         </div>
     </div>
     <!--Barra Menu fim-->

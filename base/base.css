@@ -1,5 +1,5 @@
 body {
-    background-image: url(../base/midia/imgs/001.png);
+    background-color: #222225;
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -10,8 +10,8 @@ body {
 .janela {
     width: 570px;
     height: 400px;
-    min-width: 100px;
-    min-height: 105px;
+    min-width: 220px;
+    min-height: 62px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -27,7 +27,9 @@ body {
     overflow: hidden;
     transform: translateZ(0) translate(-50%, -50%) scale(1);
     resize: both;
-    user-select: none
+    user-select: none;
+    z-index: 0;
+    display: none
 }
 
 .barraJanela {
@@ -88,6 +90,10 @@ body {
     cursor: pointer;
     user-select: none;
     margin: -2px 2px
+}
+
+.barraJanela z:hover {
+    background: #444
 }
 
 .barraJanela span {
@@ -166,7 +172,7 @@ body {
 
 .barraGlobal div{
     box-shadow: 0 0 3px #000b;
-    border: 1px solid#fff5;
+    border: 1px solid#999;
     background-color: #1118;
     border-radius: 10px;
     height: calc(100% - 2px);
@@ -176,12 +182,12 @@ body {
 
 .menuGlobal {
     padding: 0 3px;
-    margin: 0 3px 0 0
+    margin: 0 10px 0 0
 }
 
 .menuGlobal img {
     box-shadow: 0 0 0;
-    border: 1px solid#fff5;
+    border: 1px solid#0000;
     width: 42px;
     border-radius: 8px;
     cursor: pointer;
@@ -203,7 +209,7 @@ body {
     background: linear-gradient(to bottom, #fff5, #fff0);
     padding: 1px 6px;
     color: #fffc;
-    border: 1px solid#fff5;
+    border: 1px solid#999;
     border-top-width: 0;
     border-left-width: 0;
     font-size: 18px;
