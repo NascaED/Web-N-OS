@@ -1,5 +1,6 @@
 body {
-    background-color: #222225;
+    background-color: #000;
+    margin: 0px;
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -18,11 +19,11 @@ body {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: #000a;
-    padding: 42px 5px 3px 110px;
+    padding: 42px 0px 3px 110px;
     box-sizing: border-box;
     box-shadow: 0 0 30px #0008;
     border-radius: 8px;
-    border: 1px solid #7778;
+    border: 1px solid #444;
     backdrop-filter: blur(100px);
     overflow: hidden;
     transform: translateZ(0) translate(-50%, -50%) scale(1);
@@ -117,12 +118,12 @@ body {
 .conteudoJanela {
     background: #363636;
     color: #fffa;
-    height: 100%;
-    width: 100%;
+    height: calc(100% + 10px);
+    width: calc(100% + 8px);
     top: 0;
     left: 20%;
     right: 0;
-    padding: 5px;
+    padding: 0px;
     overflow: scroll;
     scrollbar-width: thin;
     box-shadow: 0 0 45px #0005;
@@ -154,6 +155,12 @@ body {
     &::-webkit-scrollbar {
         display: none
     }
+}
+
+.conteudoJanela object {
+    margin: 0px;
+    width: 100%;
+    height: 100%
 }
 /*Janela Fim*/
 /*--------------------------------------------------*/
@@ -224,14 +231,77 @@ body {
     background: #fff
 }
 /*Barra de Itens fim*/
+/*------------------------------------------------------------*/
+/*Menu de Icones*/
+#tudo {
+    height: calc(100% - 200px);
+    width: calc(100% - 100px);
+    top: calc(50% - 35px);
+    padding: 5px 0px 0px 0px;
+    color: #fff;
+    font-family: monospace;
+    font-size: 14px;
+    text-align: center;
+    resize: none;
+    border-radius: 20px;
+    border: 0px;
+    background-color: #0005
+}
+
+#tudo .btnJanela {
+    margin: 12px 0px 3px 20px
+}
+
+#tudo .conteudoJanela {
+    border: 0px;
+    background: #0000
+}
+
+#tudo .conteudoJanela z {
+    display:inline-block;
+    background-color: #0005;
+    border: 1px solid #aaa7;
+    box-shadow: 0 0 10px #0005;
+    height:auto;
+    width: 115px;
+    padding: 9px;
+    border-radius: 25px;
+    margin: 5px;
+    transition: 0.3s
+}
+
+#tudo .conteudoJanela z:hover {
+    background-color: #0008;
+    border: 1px solid #aaac
+}
+
+#tudo .conteudoJanela img {
+    width: 110px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #000a;
+    cursor: pointer;
+    border: 1px solid #7777
+}
+
+#tudo .conteudoJanela z p {
+    margin: 0px;
+    text-align: center;
+    font-family: monospace;
+    width: 100%
+}
+/*Menu de icones fim*/
 /*--------------------------------------------------------------------------------Global...*/
 /*Itens Comuns*/
-img {
-    width: 200px;
-    border-radius: 30px;
-    box-shadow: 0 0 15px #000a;
-    margin: 2px;
-    border: 1px solid#7777
+h3 {
+    font-family: monospace;
+    font-size: 20px;
+    margin: 4px
+}
+
+p {
+    font-family: arial;
+    font-size: 14px;
+    margin: 4px
 }
 
 button {
@@ -248,4 +318,9 @@ button {
 button:hover {
     background: linear-gradient(to bottom, #444, #333);
     border: 1px solid#777
+}
+
+img {
+    border: 1px solid#7777;
+    margin: 2px
 }
