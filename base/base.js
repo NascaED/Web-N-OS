@@ -72,6 +72,7 @@
                         janela.style.width = ''
                         janela.style.height = ''
                         janela.style.resize = 'both'
+                        janela.style.borderRadius = '8px'
                         janela.classList.remove('maximizada')
                     } else {// Maximiza a janela
                         janela.style.width = 'calc(100% - 1px)'
@@ -79,6 +80,7 @@
                         janela.style.top = 'calc(50% - 35px)'
                         janela.style.left = '50%'
                         janela.style.resize = 'none'
+                        janela.style.borderRadius = '0px'
                         janela.classList.add('maximizada')
                     }
                 }

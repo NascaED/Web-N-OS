@@ -119,42 +119,17 @@ body {
     background: #363636;
     color: #fffa;
     height: calc(100% + 10px);
-    width: calc(100% + 8px);
+    width: 100%;
     top: 0;
     left: 20%;
     right: 0;
     padding: 0px;
-    overflow: scroll;
+    overflow: hidden;
     scrollbar-width: thin;
     box-shadow: 0 0 45px #0005;
     scrollbar-color: #444 #363636;
-    scrollbar-width: thin;
     border: 1px solid#7777;
-
-    &::-webkit-scrollbar {
-        width: 4px
-    }
-
-    &::-webkit-scrollbar-thumb {
-        background-color: #333;
-        border-radius: 5px
-    }
-
-    &::-webkit-scrollbar-track {
-        background-color: #363636
-    }
-
-    -ms-overflow-style: none;
-    scrollbar-color: #444 #363636;
-    scrollbar-width: thin;
-
-    html {
-        scrollbar-width: none
-    }
-
-    &::-webkit-scrollbar {
-        display: none
-    }
+    margin: 0px
 }
 
 .conteudoJanela object {
@@ -324,3 +299,10 @@ img {
     border: 1px solid#7777;
     margin: 2px
 }
+
+object {
+    padding: 0px;
+    margin: 0px
+}
+/*Itens Comuns fim*/
+/*----------------------------------------------------------------------------*/

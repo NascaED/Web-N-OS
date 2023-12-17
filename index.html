@@ -11,10 +11,10 @@
 <body>
     <!--Janelas-->
     <!--Janela 0-->
-    <div class="janela" id="modelo">
+    <div class="janela" id="conf">
         <div class="barraJanela">
-            <div class="btnJanela"></div><span>Modelo de janela (0.0.1)</span>
-            <z>☰</z><z>⌬</z><z>⌥</z><z>⌨</z><img src="./base/midia/icons/ico-J-N.png">
+            <div class="btnJanela"></div><span>Configurações</span>
+            <z>☰</z><z>⌬</z><z>⌥</z><z>⌨</z><img src="./base/midia/icons/WEB-N-OS-C.png">
         </div>
         <div class="conteudoJanela">
             <button>Aplicar</button>
@@ -49,6 +49,28 @@
         </div>
     </div>
     <!--2...-->
+    <!--Janela 3-->
+    <div class="janela" id="SS" style="padding-left:0;width:90%;height:800px">
+        <div class="barraJanela">
+            <div class="btnJanela"></div><span>PNL - SS</span>
+            <z>☰</z><z>⌬</z><z>⌥</z><z>⌨</z><img src="./base/midia/icons/ico-ss.png">
+        </div>
+        <div class="conteudoJanela">
+            <object data-src="/base/apps/ss/index.html"></object>
+        </div>
+    </div>
+    <!--3...-->
+    <!--Janela 4-->
+    <div class="janela" id="2048" style="width:430px;min-width:430px;height:500px;min-height:500px">
+        <div class="barraJanela">
+            <div class="btnJanela"></div><span>Jogo - 2048</span>
+            <z>☰</z><z>⌬</z><z>⌥</z><z>⌨</z><img src="./base/midia/icons/ico-2048.png">
+        </div>
+        <div class="conteudoJanela">
+            <object data-src="/base/apps/2048/index.html"></object>
+        </div>
+    </div>
+    <!--4...-->
     <!--Janela fim-->
     <!--Menu de todos os itens-->
     <div class="janela" id="tudo">
@@ -58,16 +80,19 @@
                 <p>Modelo J</p>
             </z>
             <z><img src="./base/midia/icons/ico-N-1.png" data-target="nnn">
-                <p>NascaED ADD-on</p>
+                <p>N ADD-on</p>
             </z>
-            <z><img src="./base/midia/icons/ico-acervo.png" data-target="modelo">
+            <z><img src="./base/midia/icons/WEB-N-OS-C.png" data-target="conf">
                 <p>Modelo</p>
+            </z>
+            <z><img src="./base/midia/icons/ico-nascaed.png" data-target="nnn">
+                <p>NascaED</p>
             </z>
             <z><img src="./base/midia/icons/ico-ggg.png" data-target="...">
                 <p>Jogo GGG</p>
             </z>
-            <z><img src="./base/midia/icons/ico-nascaed.png" data-target="nnn">
-                <p>NascaED</p>
+            <z><img src="./base/midia/icons/ico-acervo.png" data-target="...">
+                <p>Acervo</p>
             </z>
             <z><img src="./base/midia/icons/ico-ne.png" data-target="...">
                 <p>Noticias</p>
@@ -78,8 +103,11 @@
             <z><img src="./base/midia/icons/ico-spfe.png" data-target="...">
                 <p>SPFE</p>
             </z>
-            <z><img src="./base/midia/icons/ico-ss.png" data-target="...">
+            <z><img src="./base/midia/icons/ico-ss.png" data-target="SS">
                 <p>SS</p>
+            </z>
+            <z><img src="./base/midia/icons/ico-2048.png" data-target="2048">
+                <p>2048</p>
             </z>
             <z><img src="./base/midia/icons/ico-editorTexto.png" data-target="...">
                 <p>Edit Text</p>
@@ -98,9 +126,8 @@
         <div class="menuGlobal">
             <img src="./base/midia/icons/ico-todosapp.png" data-target="tudo">
             <img src="./base/midia/icons/ico-N-1.png" data-target="nnn">
-            <img src="./base/midia/icons/ico-spfe.png" data-target="...">
-            <img src="./base/midia/icons/ico-ss.png" data-target="...">
-            <img src="./base/midia/icons/ico-ne.png" data-target="modelo">
+            <img src="./base/midia/icons/ico-ss.png" data-target="SS">
+            <img src="./base/midia/icons/WEB-N-OS-C.png" data-target="conf">
             <img src="./base/midia/icons/ico-J-N.png" data-target="inf">
         </div>
         <div class="itensGlobal">

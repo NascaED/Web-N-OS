@@ -1,0 +1,133 @@
+body {
+    background: #267cc2;
+	animation: blinker 10s linear infinite;
+	font-family: Arial, sans-serif;
+    user-select: none;
+    margin: 0px;
+    overflow: hidden;
+    scrollbar-width: thin
+}
+
+header {
+	display: flex;
+    justify-content: space-between;
+	align-items: center;
+	height: 20vh;
+    margin: 0px 0px -20px 0px;
+    padding: 0px 30px 0px 30px
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60vh;
+    margin: 0px 0px 0px 0px
+}
+
+footer {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    height: 20vh;
+    margin: 20px 0px 0px 0px
+}
+
+@keyframes blinker {
+	50% {
+		background-color: #134d7c
+	}
+}
+
+.barraSuperior{
+	height: 200px;
+	margin-top: 0px
+}
+
+.panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 50px 0px 50px;
+    margin: -30px 5px 5px 0px;
+    border-radius: 10px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.541);
+    background-color: #fff
+}
+
+h1 {
+    font-size: 250px;
+	font-weight: bold;
+    margin: -20px 0px 0px 0px;
+	background: linear-gradient(to bottom, #6cb5ff, #1a8cff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent
+}
+
+h2 {
+    font-size: 50px;
+    margin: 0
+}
+
+p {
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.541);
+    margin: 0px 0px -10px 0px
+}
+
+d {
+    font-size: 30px;
+    background: linear-gradient(to bottom, #167be0, #0b4d8f);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    margin: -35px 0px 20px 0px
+}
+
+#ultimaSenhaTexto{
+	font-size: 20px;
+	color: #006caa
+}
+
+.ultimaSenhaNumero{
+	font-size: 40px;
+	color: black
+}
+
+.animation {
+    animation-name: slide-up;
+    animation-duration: 0.9s
+}
+
+@keyframes slide-up {
+    0% {
+      transform: translateY(100%)
+    }
+    100% {
+      transform: translateY(0)
+    }
+}
+
+audio{
+	display: none;
+}
+
+.NascaEDLogo{
+    margin: 0px 0vw 0px 0px;
+	max-width: 100px;
+    height: 100px
+}
+
+#horas{
+    font-size: 70px;
+    font-style: italic;
+    text-align: right;
+	color: #fffd
+}
+
+.hud{
+    margin: 25px 0px 0px 0px;
+    text-align: right;
+	color: #fffd;
+    font-size: 40px
+}
