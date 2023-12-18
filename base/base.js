@@ -226,3 +226,31 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 })
 //------------------------------------------
+// Função para obter informações do navegador e da máquina do usuário
+function obterInformacoesUsuario() {
+    var infoMaster = document.getElementById('infoM')
+    var infoElement = document.getElementById('infoi')
+
+    var logo = '<h1>._..._.....................______._____<br>|.\\.|.|...................|..____|..__.\\<br>|..\\|.|.__._.___..___.__._|.|__..|.|..|.|<br>|...`.|/._`./.__|/.__/._`.|..__|.|.|..|.| - <b>OS</b><br>|.|\\..|.(_|.\\__.\\.(_|.(_|.|.|____|.|__|.|<br>|_|.\\_|\\__,_|___/\\___\\__,_|______|_____/</h1>'
+    // Informações do navegador
+    var navegadorInfo = navigator.userAgent
+    // Informações da tela
+    var telaInfo = 'Resolução da Tela: <strong>' + window.innerWidth + '</strong>px. por: <strong>' + window.innerHeight + '</strong>px.'
+    // Idioma do navegador
+    var idiomaNavegador = 'Idioma do Sistema: ' + navigator.language
+    // Plataforma do sistema operacional
+    var plataformaSistema = 'Plataforma de <strong>emulação:</strong> ' + navigator.platform
+    // Adiciona as informações ao elemento na página
+    infoElement.innerHTML = navegadorInfo + '<br><br><br><hr>' + telaInfo + '<br>' + plataformaSistema
+    infoMaster.innerHTML = '<strong>NascaED - OS</strong>v:0.0.2<br><hr>' + idiomaNavegador + '<br>' + logo
+    // Adicionar mais informações específicas, se possível
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        infoElement.innerHTML += '<br><br>Preferência de Esquema de Cores: <strong>Escuro</strong>'
+    } else {
+        infoElement.innerHTML += '<br><br>Preferência de Esquema de Cores: <strong>Claro</strong>'
+    }
+}
+setInterval(obterInformacoesUsuario, 10000)
+// Chama a função ao carregar a página
+obterInformacoesUsuario()
+//------------------------------------------
