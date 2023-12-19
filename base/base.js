@@ -250,7 +250,6 @@ function obterInformacoesUsuario() {
         infoElement.innerHTML += '<br><br>Preferência de Esquema de Cores: <strong>Claro</strong>'
     }
 }
-setInterval(obterInformacoesUsuario, 10000)
 // Chama a função ao carregar a página
 obterInformacoesUsuario()
 //------------------------------------------

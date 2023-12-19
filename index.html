@@ -75,7 +75,7 @@
     <div class="janela" id="sis" style="width:1008px;min-width:1008px;height:650px;min-height:650px">
         <div class="barraJanela">
             <div class="btnJanela"></div><span>Sistema N</span>
-            <z>☰</z><z>⌬</z><z>⌥</z><z>⌨</z><img src="./base/sysd/progs/apps/exep/nascaedOS.png">
+            <z>☰</z><z>⌬</z><z>⌥</z><z>⌨</z><img src="./base/sysd/progs/apps/exep/p.png">
         </div>
         <div class="conteudoJanela">
             <object data-src="/base/sysd/progs/apps/exep/index.html"></object>
@@ -101,6 +101,9 @@
             </z>
             <z><img src="./base/sysd/progs/apps/exep/p.png" data-target="sis">
                 <p>Arquivos</p>
+            </z>
+            <z><img src="./base/midia/icons/ico-terminal.png" data-target="Terminal">
+                <p>Terminal</p>
             </z>
             <z><img src="./base/midia/icons/ico-ggg.png" data-target="...">
                 <p>Jogo GGG</p>
@@ -215,6 +218,20 @@
             </zz>
         </div>
     </div>
+    <div class="janela" id="Terminal">
+        <div class="barraJanela">
+            <div class="btnJanela"></div><span>Terminal - N OS</span>
+            <z>☰</z><z>⌬</z><z>⌥</z><z>⌨</z><img src="./base/midia/icons/ico-terminal.png">
+        </div>
+        <div class="conteudoJanela">
+            <div class="terminal">
+                <div class="output" id="output">Bem-vindo ao terminal <strong>NascaED OS</strong>! Digite um comando.</div>
+                <input type="text" id="input" placeholder="Digite um comando...">
+            </div>
+        </div>
+    </div>
 </body>
+<!--Logicas aqui:-->
 <script src="base/base.js"></script>
+<script src="base/sysd/libin/terminal.js"></script>
 </html>
