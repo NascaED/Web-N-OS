@@ -10,7 +10,8 @@ document.addEventListener('DOMContentLoaded', function () {
         horas: showTime,
         dir: pastas,
         sobre: sysinfo,
-        big: telaG
+        big: telaG,
+        sair: sairT
         // Adicione mais comandos aqui
     };
     input.addEventListener('keyup', function (event) {
@@ -121,5 +122,19 @@ function telaG() { // big
     const msg = document.createElement('p');
     msg.innerHTML = 'Tela cheia :)<br>Para sair aperte a tecla "<span style="color:#fffa">F11</span>"'
     output.appendChild(msg);
+}
+
+function sairT() { // sair
+    const msg = document.createElement('div');
+    output.innerHTML = '';
+    msg.innerHTML = 'Bem-vindo ao terminal <strong>NascaED OS</strong>! Digite um comando.'
+    output.appendChild(msg);
+    var div = document.getElementById('Terminal')
+    if (div) {
+        div.style.display = 'none'
+        div.style.border = '1px solid #444'
+        div.classList.remove('f')
+    }
+    
 }
 //------------------------------------------
